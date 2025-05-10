@@ -1,5 +1,5 @@
 {% set name = "pyyaml-env-tag" %}
-{% set version = "0.1" %}
+{% set version = "1.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyyaml_env_tag-{{ version }}.tar.gz
-  sha256: 70092675bda14fdec33b31ba77e7543de9ddc88f2e5b99160396572d11525bdb
+  sha256: bc952534a872b583f66f916e2dd83e7a7b9087847f4afca6d9c957c48b258ed2
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
